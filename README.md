@@ -217,22 +217,18 @@ Cài đặt IP tĩnh cho Zabbix server trong file /etc/sysconfig/network-scripts
 
 ### EVE-NG không chạy được do xung đột VT-x
 
-EVE-NG yêu cầu Intel VT-x hoặc AMD-V. Trên một số máy Windows 11, tính năng này xung đột với Credential Guard / Virtual Based Security.
-
-Giải pháp: Tắt Credential Guard theo hướng dẫn tại: https://community.broadcom.com/vmware-cloud-foundation/discussion/windows-11-24h2-hsot-how-to-disable-virtual-based-security
+- EVE-NG yêu cầu Intel VT-x hoặc AMD-V. Trên một số máy Windows 11, tính năng này xung đột với Credential Guard / Virtual Based Security. Tắt Credential Guard theo hướng dẫn tại: [Turn off VBS](https://community.broadcom.com/vmware-cloud-foundation/discussion/windows-11-24h2-hsot-how-to-disable-virtual-based-security)
 
 ### Cấu hình FortiGate chưa có hiệu lực
 
-Một số cấu hình trên FortiGate cần tắt rồi bật lại interface hoặc restart thiết bị mới áp dụng.
+- Một số cấu hình trên FortiGate cần tắt rồi bật lại interface hoặc restart thiết bị mới áp dụng.
 
 ### Host mới trên Zabbix hiển thị "Unknown"
 
-Dù SNMP đã hoạt động, host mới tạo vẫn có thể hiển thị trạng thái Unknown. Giải pháp: Tắt và bật lại Zabbix Appliance (restart VM).
+- Dù SNMP đã hoạt động, host mới tạo vẫn có thể hiển thị trạng thái Unknown. Giải pháp: Tắt và bật lại Zabbix Appliance (restart VM).
 
 ### Một số item SNMP không trả về kết quả
  
-Khi giám sát qua SNMP, một số item có thể không lấy được dữ liệu dù kết nối SNMP hoạt động bình thường. Nguyên nhân có thể do OID trong template khác với OID thiết bị ảo hỗ trợ. 
-Ví dụ ở phần tùy chỉnh dashboard, template có sẵn OID cho bộ nhớ còn trống nhưng không trả về kết quả, cần thay bằng OID khác phù hợp hơn. 
-Tham khảo danh sách OID tại: [SNMP OIDs for Switch Monitoring](https://www.10-strike.com/network-monitor/pro/useful-snmp-oids.shtml)
+- Khi giám sát qua SNMP, một số item có thể không lấy được dữ liệu dù kết nối SNMP hoạt động bình thường. Nguyên nhân có thể do OID trong template khác với OID thiết bị ảo hỗ trợ. Ví dụ ở phần tùy chỉnh dashboard, template có sẵn OID cho bộ nhớ còn trống nhưng không trả về kết quả, cần thay bằng OID khác phù hợp hơn. Tham khảo danh sách OID tại: [SNMP OIDs for Switch Monitoring](https://www.10-strike.com/network-monitor/pro/useful-snmp-oids.shtml)
 
 ---
