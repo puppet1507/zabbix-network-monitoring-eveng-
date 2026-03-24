@@ -157,16 +157,15 @@ Tham khảo thêm: [EVE-NG HowTo Documentation](https://www.eve-ng.net/index.php
 
 ### Bật SNMP trên thiết bị
 
-| Thiết bị            | Cấu hình                                                   |
-|---------------------|------------------------------------------------------------|
-| FortiGate           | Bật SNMP v2c, community `public`, cho phép SNMP trên port2 |
-| Core / Dis / Access | Bật SNMP bằng lệnh CLI                                     |
-| Lubuntu             | Cài SNMP agent, cho phép mọi kết nối UDP:161               |
+- FortiGate: Bật SNMP v2c, community `public`, cho phép SNMP trên port2
+  
+  <img width="1919" height="862" alt="image" src="https://github.com/user-attachments/assets/c331ab84-9360-4d56-82ee-f664bca9fc49" />
 
-```bash
-# Lệnh bật SNMP trên IOS switch
-snmp-server community public RO
-```
+- Core / Dis / Access Switch: Bật SNMP bằng lệnh `snmp-server community public RO`
+  
+- LubuntuCài SNMP agent, cho phép mọi kết nối UDP:161
+
+  <img width="807" height="424" alt="image" src="https://github.com/user-attachments/assets/5daa8ac4-8cd6-4857-bae2-e69c17b01800" />
 
 ### Cài đặt Zabbix Appliance
 
