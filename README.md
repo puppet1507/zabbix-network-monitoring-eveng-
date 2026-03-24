@@ -71,7 +71,7 @@ Sau khi tạo máy ảo, truy cập IP của EVE-NG trên trình duyệt và đ�
 - Username: `admin`
 - Password: `eve`
 
-Sau đó tạo lab mới và bắt đầu thêm thiết bị.
+Sau đó tạo lab mới và bắt đầu thêm thiết bị hoặc import Zabbix-monitoring.unl.
 
 ### 3. Cài EVE-NG Client Pack
 
@@ -83,7 +83,7 @@ Cài đặt EVE-NG Windows Client Pack để tích hợp sẵn các công cụ: 
 
 1. Dùng WinSCP chuyển image vào thư mục: /opt/unetlab/addons/qemu/
 
-2. Đặt đúng định dạng tên thư mục theo chuẩn EVE-NG.
+2. Đặt đúng định dạng tên thư mục theo chuẩn EVE-NG. Hoặc tải từ [Google Drive](https://drive.google.com/file/d/1dzZdLGZLbkXHe-cmoC1vFE94M6tpIrlI/view?usp=drive_link) sau đó copy.
 
    <img width="744" height="329" alt="Screenshot 2026-03-24 053045" src="https://github.com/user-attachments/assets/a847c9fc-3523-4ac1-9c89-b57be7de490c" />
 
